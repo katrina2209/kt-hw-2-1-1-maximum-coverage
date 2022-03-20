@@ -157,7 +157,7 @@ class MainKtTest {
         val previousTransferPerMonth = 800_000_00.00
         val transferSum = 4_000_00.00
         val accountType = "Maestro"
-        val expectedResult = false
+        val expectedResult = true
 
         val actualResult =
             areLimitsNotOverrun(previousTransferPerDay, previousTransferPerMonth, transferSum, accountType)
